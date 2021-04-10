@@ -1,0 +1,84 @@
+.example-1 .form-group {
+  padding: 1em;
+  margin: 1em;
+}
+
+.example-1 input[type=file] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.example-1 .label {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border: 7px solid #366442;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu-popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: -86px;
+  border-radius: 15px;
+  padding: 10px;
+  transform: translateY(197px);
+  transition: 0.3s;
+}
+.menu-popup-active {
+  transform: translateY(0);
+}
+.menu-popup a img {
+  width: 20px;
+  aspect-ratio: 1/1;
+  margin-bottom: 12px;
+}
+
+.options-menu-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options-menu-toggler {
+  transform: rotate(0);
+  transition: 0.3s;
+}
+.options-menu-toggler-active {
+  transform: rotate(180deg);
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  text-decoration: none;
+}
+
+.header-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.footer {
+  background: #529967;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.navbar-makephoto {
+  margin-top: -100px;
+}
+.navbar-addimg {
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,21 @@
+.example-1 .form-group{
+    padding:1em;
+}
+.example-1 input[type=file]{
+    outline:0;
+    opacity:0;
+    pointer-events:none;
+    user-select:none;
+}
+.example-1 .label{
+    width:120px;
+    height:120px;
+    background-color:white;
+    border:7px solid #366442;
+    border-radius:50%;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+
