@@ -17,7 +17,10 @@
             <img src="img/logo.svg" alt="" class="header-logo">
         </div>
     </header>
-    
+    <form name="form1" action="loadfile.php" enctype="multipart/form-data" method="post">
+    <input type="file" name="path" title="Выберите файл"/> </br>
+    </br>
+    <input type="submit" name="button" /> </br>
     <footer class="footer">
         <div class="container footer-container">
             <div class="navbar">
@@ -49,4 +52,14 @@
     <script src="js/main.js"></script>
     <!--  -->
 </body>
+<?php
+    include ('src/main.html');
+    $file = "upload/".$_FILES['path']['name'];
+    move_uploaded_file($_FILES['path']['tmp_name'], $file);
+    if(isset($_FILES['path']['name']))
+    {
+        echo "Загруженный файл: ".$_FILES['path']['name']."</br>";
+        echo "Размер: ".$_FILES['path']['size']."байт";
+    }
+?>
 </html>
